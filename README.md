@@ -5,7 +5,7 @@
 This project implements a simple financial data processing pipeline using Python. It reads transaction data from an Excel file, cleans and validates it, performs analytics, stores the processed data in PostgreSQL with pgvector support, and provides a basic Django dashboard for viewing processing information.
 
 ---
-
+![alt text](<Screenshot 2026-07-07 032123.png>) ![alt text](<Screenshot 2026-07-07 032057.png>)
 ## Features
 
 ### A. Excel Processing (Pandas)
