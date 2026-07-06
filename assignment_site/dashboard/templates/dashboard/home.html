@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Financial Data Dashboard</title>
+
+    <style>
+
+        body{
+            font-family:Arial;
+            background:#f4f6f9;
+            margin:40px;
+        }
+
+        h1{
+            text-align:center;
+        }
+
+        .card{
+            background:white;
+            width:500px;
+            margin:auto;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0px 2px 10px lightgray;
+        }
+
+        .row{
+            display:flex;
+            justify-content:space-between;
+            margin:15px 0;
+            font-size:18px;
+        }
+
+        a{
+            text-decoration:none;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            font-size:16px;
+            border:none;
+            border-radius:8px;
+            background:#0078d4;
+            color:white;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#005fa3;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Financial Data Processing Dashboard</h1>
+
+<div class="card">
+
+<div class="row">
+<b>Latest File</b>
+<span>{{ filename }}</span>
+</div>
+
+<div class="row">
+<b>Rows</b>
+<span>{{ rows }}</span>
+</div>
+
+<div class="row">
+<b>Columns</b>
+<span>{{ columns }}</span>
+</div>
+
+<br>
+
+<a href="/process?file=transactions.xlsx">
+<button>Run Processing</button>
+</a>
+
+</div>
+
+</body>
+</html>
